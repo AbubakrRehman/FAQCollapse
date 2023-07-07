@@ -1,0 +1,5 @@
+1. box shadow property is cool.
+
+2. conatiner me active class lagao n fr uske different sub conatiner ka style chnge kro jb active mode pe us container k related koi b change chahiye to.
+
+3. element.parentNode to acess parent html tag in javascript.
