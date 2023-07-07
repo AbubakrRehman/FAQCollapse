@@ -31,8 +31,9 @@ h1 {
 }
 
 .faq {
-    border: 2px solid black;
-    margin: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 3px grey,-2px -2px 3px grey;
+    margin: 12px;
     padding: 10px;
     border-radius: 5px;
     position: relative;
