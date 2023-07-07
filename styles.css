@@ -13,3 +13,104 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.faq__toggle {
+    font-family: "Font Awesome 5 Free";
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.faq__container {
+    margin: 0 auto;
+    max-width: 320px;
+    font-size: 2rem;
+    /* border: 2px solid red; */
+}
+
+.faq {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.faq.active::before,
+.faq.active::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f075";
+    font-size: 5rem;
+    font-weight: 100;
+    opacity: 0.3;
+    color: blueviolet;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+}
+
+.faq.active::after {
+    color: grey;
+    position: absolute;
+    z-index: 0;
+    top: 15%;
+    left: 15%;
+
+}
+
+.faq__ans {
+    display: none;
+    font-size: 1.7rem;
+    /* transition: height 2s ease; */
+}
+
+.faq.active {
+    background-color: grey;
+    color: white;
+}
+
+.faq.active .faq__ans {
+    display: block;
+    
+}
+
+
+.times {
+    display: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.faq.active .times {
+    display: block;
+}
+
+.faq.active .fa-chevron-down {
+    display: none;
+}
+
+.faq__toggle {
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.faq__toggle:hover {
+    cursor: pointer;
+}
+
+.faq__toggle:focus {
+    outline: none;
+}
